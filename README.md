@@ -1,147 +1,147 @@
-**Week 8: Capstone Project - Building Your Final MERN Application**
+# 🍽️ SHARE A SMILE - Food Donation Platform
 
-**Objective:**
+## 🌍 About the Project
+**SHARE A SMILE** is a technology-driven food donation platform designed to **reduce food waste** and **combat hunger**. It connects **donors** (individuals, supermarkets, NGOs) with **recipients** (people in need, NGOs, and food banks) efficiently and transparently.
 
-- Apply your knowledge of the MERN stack to build a full-fledged application.
-- Demonstrate your understanding of project planning, architecture, and deployment.
-- Develop a comprehensive portfolio project to showcase your skills.
+By leveraging **Node.js, Express, MongoDB, and React**, this platform ensures seamless donation management, tracking, and communication between stakeholders.
 
-**Project Overview:**
-
-Your task is to design, architect, and present a full-stack MERN application of your choice. This final project should reflect the culmination of all concepts learned throughout the course, including front-end and back-end integration, authentication, CRUD operations, and deployment.
-
-**Guidelines:**
-
-### 1. **Project Selection**
-Choose a project idea that aligns with your interests and skills. Some examples include:
-
-- **E-commerce Store** – Users can browse products, add items to the cart, and checkout.
-- **Task Management App** – Users can create, edit, and organize their tasks.
-- **Social Media Platform** – Users can post content, comment, and interact with others.
-- **Portfolio Website** – Showcase your projects, experience, and skills.
-
-**Pro Tip:** Choose a project that highlights your unique strengths and interests.
+## 🎯 Key Features
+✅ **User Roles**: Donor, Recipient, NGO, Admin  
+✅ **Donation Management**: Create, view, and claim food donations  
+✅ **Search & Filtering**: Easily find donations based on category, expiry, and location  
+✅ **Approval Process**: Ensure transparency in claims before pickup  
+✅ **Chat System**: Communicate with donors and recipients via an integrated chat  
+✅ **Dashboard Analytics**: View statistics on food donations, claims, and impact  
+✅ **Notifications System**: Get real-time alerts for donation approvals, updates, and messages  
+✅ **Automated Cleanup**: Expired donations are automatically marked unavailable  
+✅ **Authentication & Authorization**: Secure login and role-based access control  
 
 ---
 
-### 2. **Project Planning**
-
-**Deliverables:**
-
-- **Project Proposal:**
-  - Define the problem you are solving.
-  - Identify key features.
-  - Outline the expected user journey.
-  
-- **Wireframes & UI Designs:**
-  - Use tools like Figma or Canva to visualize your application.
-  - Ensure intuitive navigation and responsive design.
-
-- **Technical Requirements:**
-  - Define the database schema (collections and relationships).
-  - Identify third-party services (e.g., Stripe for payments, Firebase for authentication).
-
----
-
-### 3. **Project Architecture**
-
-**Suggested Folder Structure:**
+## 🏗️ Project Structure
 ```
-mern-capstone/
-│-- backend/
-│   ├── models/
-│   ├── routes/
-│   ├── controllers/
-│   ├── server.js
-│-- frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   ├── App.js
-│-- README.md
+SHAREASMILE-FOOD_DONATION_APP/
+│── server/               # Backend (Node.js, Express, MongoDB)
+│   ├── models/           # Database schemas
+│   ├── routes/           # API endpoints
+│   ├── controllers/      # Business logic
+│   ├── middleware/       # Authentication & validation
+│   ├── utils/            # Helper functions
+│── client/               # Frontend (React, Bootstrap, ShadCN UI)
+│   ├── components/       # Reusable UI components
+│   ├── pages/            # Page views (Dashboard, Profile, Donations, etc.)
+│   ├── services/         # API integration
+│   ├── styles/           # Custom CSS & UI tweaks
+│── .env                  # Environment variables
+│── README.md             # Project Documentation
 ```
 
-**Essential Features to Implement:**
+---
 
-- **Backend:**
-  - RESTful API with Express.js.
-  - MongoDB database schema design.
-  - JWT-based authentication.
-  - CRUD operations for core resources.
+## 🔗 API Routes
+### 🛠️ Authentication
+- `POST /api/auth/register` → User registration
+- `POST /api/auth/login` → User login
+- `POST /api/auth/logout` → Logout
 
-- **Frontend:**
-  - Responsive React UI.
-  - State management (React Context/Redux).
-  - API consumption using Axios.
-  - Routing with React Router.
+### 🍲 Food Donations
+- `POST /api/donations/create` → Create a new food donation
+- `GET /api/donations` → Get all available donations
+- `GET /api/donations/:id` → Get donation details
+- `PATCH /api/donations/:id/claim` → Claim a donation
+- `DELETE /api/donations/:id` → Remove expired/unavailable donation
+
+### 📊 Statistics & Recent Activities
+- `GET /api/stats/donor` → Get donor-specific statistics
+- `GET /api/stats/recipient` → Get recipient-specific statistics
+- `GET /api/stats/admin` → Get platform-wide insights
+- `GET /api/activities/:userId` → Get recent activities
+
+### 📢 Notifications
+- `GET /api/notifications` → Get user notifications
+- `PATCH /api/notifications/read` → Mark notifications as read
+
+### 💬 Chat System
+- `POST /api/chat/send` → Send a message
+- `GET /api/chat/:userId` → Retrieve chat messages
 
 ---
 
-### 4. **Implementation Timeline**
+## 🚀 Tech Stack
+### Backend 🛠️
+- **Node.js & Express.js** → REST API development
+- **MongoDB & Mongoose** → Database & schema management
+- **JWT Authentication** → Secure authentication & role-based access
+- **Socket.io (Planned Upgrade)** → Real-time chat & notifications
 
-| Milestone             | Description                            | Suggested Timeframe |
-|----------------------|----------------------------------------|---------------------|
-| Project Setup         | Initialize the project, install dependencies | 1 Day               |
-| Backend Development  | API development and database setup    | 3 Days              |
-| Frontend Development | UI implementation and API integration | 3 Days              |
-| Testing & Debugging  | Unit and integration tests            | 2 Days              |
-| Deployment           | Deploy app on Vercel/Render           | 1 Day                |
-
----
-
-### 5. **Deployment**
-
-**Steps for Deployment:**
-
-- Deploy the backend on **Render** or **Heroku** with environment variables.
-- Deploy the frontend on **Vercel** or **Netlify**.
-- Test the live app and ensure all features work correctly.
-
-**Required Links:**
-
-- Live application URL.
-- GitHub repository URL (frontend and backend).
+### Frontend 🎨
+- **React.js** → Dynamic UI & user experience
+- **ShadCN UI & Radix UI** → Modern UI components
+- **Bootstrap & CSS** → Styling and layout
 
 ---
 
-### 6. **Presentation and Documentation**
+## 📌 Setup Instructions
+### Prerequisites
+Ensure you have **Node.js**, **MongoDB**, and **npm/yarn** installed.
 
-**Deliverables:**
+### 1️⃣ Clone the Repository
+```sh
+$ git clone https://github.com/yourusername/share-a-smile.git
+$ cd share-a-smile
+```
 
-1. **README.md file** should include:
-   - Project overview.
-   - Features list.
-   - Installation and usage guide.
-   - API documentation (if applicable).
-   - Screenshots of the project.
+### 2️⃣ Backend Setup
+```sh
+$ cd server
+$ npm install
+$ cp .env.example .env  # Configure environment variables
+$ npm start
+```
 
-2. **Presentation**
-   - 5-minute walkthrough of your project.
-   - Explain the problem, solution, and key features.
-   - Discuss challenges faced and future improvements.
+### 3️⃣ Frontend Setup
+```sh
+$ cd client
+$ npm install
+$ npm start
+```
 
-**Recommended Tools:**
-
-- Google Slides for presentation.
-- Loom for screen recording.
-
----
-
-### 7. **Evaluation Criteria**
-
-Your final project will be evaluated based on the following:
-
-- **Functionality (30%)** – Does the application meet its intended purpose?
-- **Code Quality (20%)** – Is the code well-structured and maintainable?
-- **UI/UX (20%)** – Is the app visually appealing and user-friendly?
-- **Documentation (15%)** – Is the project well-documented?
-- **Presentation (15%)** – Is the project presented effectively?
+🚀 **Visit:** `http://localhost:3000/` to access the platform.
 
 ---
 
-### 8. **Submission**
-
-- Push your code to your GitHub repository.
-- Submit your GitHub and live project links.
+## 🎯 Roadmap & Future Enhancements
+✔️ Implement donation approval process ✅ (In Progress)  
+✔️ Enhance chat system with WebSockets 🔄 (In Progress) 
+✔️ Optimize search filters for better efficiency 📌 (Planned)  
+✔️ Improve user dashboard UI for better insights ✨ (Planned)
+✔️ Multi-language Support
+✔️ OTP Implementation for Secure Authentication 🔐 (Planned)
+✔️ Lockscreen Feature During Inactivity ⏳ (Planned)
 
 ---
+
+## 🛡️ Security & Best Practices
+🔐 **Authentication**: JWT-based secure login system  
+⚡ **Validation**: Backend data validation with middleware  
+🛑 **Error Handling**: Standardized API responses with error codes  
+📊 **Database Indexing**: Optimized for faster queries  
+
+---
+
+## 🤝 Contributing
+We welcome contributions! Please follow these steps:
+1. Fork the repo & clone it locally.
+2. Create a feature branch: `git checkout -b feature-name`
+3. Commit changes & push: `git push origin feature-name`
+4. Submit a Pull Request 🎉
+
+---
+
+## 📩 Contact & Support
+📧 Email: support@shareasmile.com  
+🌐 Website: [www.shareasmile.com](https://www.shareasmile.com)  
+🐦 Twitter: [@ShareASmile](https://twitter.com/ShareASmile)  
+
+> *“Together, we can make a difference. Let's fight hunger, one meal at a time!”* 🍽️💙
+

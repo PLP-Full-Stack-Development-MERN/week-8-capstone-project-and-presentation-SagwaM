@@ -156,9 +156,7 @@ We welcome contributions! Please follow these steps:
 ---
 
 ## 📸 Screenshots
-![Homepage Screenshot](<img width="799" alt="Homepage-SmileAShare" src="https://github.com/user-attachments/assets/c10393e5-d823-41c6-a869-851b7720e3b9" />
-)
-![Chat System Screenshot](<img width="282" alt="image" src="https://github.com/user-attachments/assets/656650d7-f631-4f21-8c32-68accdca7af6" />
-)
-<img width="799" alt="Homepage-SmileAShare" src="https://github.com/user-attachments/assets/66cf5ebf-8169-45d7-bab4-dbb0f106bc55" />
+![Homepage Screenshot] <img width="799" alt="Homepage-SmileAShare" src="https://github.com/user-attachments/assets/66cf5ebf-8169-45d7-bab4-dbb0f106bc55" /> ![Chat System Screenshot]![Screenshot 2025-03-24 113333](https://github.com/user-attachments/assets/fa575bdd-8f07-47d8-954a-bb475556d99d)  <img width="865" alt="image" src="https://github.com/user-attachments/assets/c0fc398e-7cc1-4aea-ba5c-4ed4102ec8d6" />
+
+
 

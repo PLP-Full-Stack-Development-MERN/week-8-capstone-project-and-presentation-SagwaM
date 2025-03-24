@@ -139,9 +139,8 @@ We welcome contributions! Please follow these steps:
 ---
 
 ## 📩 Contact & Support
-📧 Email: support@shareasmile.com  
-🌐 Website: [www.shareasmile.com](https://www.shareasmile.com)  
-🐦 Twitter: [@ShareASmile](https://twitter.com/ShareASmile)  
+📧 Email:  
+🌐 Website: [https://share-a-smile-food-donation-app.vercel.app/](https://share-a-smile-food-donation-app.vercel.app/)  
 
 > *“Together, we can make a difference. Let's fight hunger, one meal at a time!”* 🍽️💙
 

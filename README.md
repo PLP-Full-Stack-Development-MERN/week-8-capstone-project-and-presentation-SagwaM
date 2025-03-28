@@ -139,9 +139,23 @@ We welcome contributions! Please follow these steps:
 ---
 
 ## 📩 Contact & Support
-📧 Email: support@shareasmile.com  
-🌐 Website: [www.shareasmile.com](https://www.shareasmile.com)  
-🐦 Twitter: [@ShareASmile](https://twitter.com/ShareASmile)  
+📧 Email:  
+🌐 Website: [https://share-a-smile-food-donation-app.vercel.app/](https://share-a-smile-food-donation-app.vercel.app/)  
 
 > *“Together, we can make a difference. Let's fight hunger, one meal at a time!”* 🍽️💙
+
+
+---
+
+## 🔗 Links
+- **GitHub Repository**: [https://github.com/SagwaM/ShareASmile-Food_Donation_App](https://github.com/SagwaM/ShareASmile-Food_Donation_App)
+- **Live Demo**: [https://share-a-smile-food-donation-app.vercel.app/](https://share-a-smile-food-donation-app.vercel.app/)
+- **API Documentation**: 
+
+---
+
+## 📸 Screenshots
+![Homepage Screenshot] <img width="799" alt="Homepage-SmileAShare" src="https://github.com/user-attachments/assets/66cf5ebf-8169-45d7-bab4-dbb0f106bc55" /> ![Chat System Screenshot]![Screenshot 2025-03-24 113333](https://github.com/user-attachments/assets/fa575bdd-8f07-47d8-954a-bb475556d99d)  <img width="865" alt="image" src="https://github.com/user-attachments/assets/c0fc398e-7cc1-4aea-ba5c-4ed4102ec8d6" />
+
+
 

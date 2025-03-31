@@ -5,14 +5,16 @@
 
 By leveraging **Node.js, Express, MongoDB, and React**, this platform ensures seamless donation management, tracking, and communication between stakeholders.
 
-## Credentials
-|Role | Email | Password|
-|Admin | sagwakmaria@gmail.com |adminpass123|
-|Donor | ariavhope4@gmail.com | @Mingyu_donor|
-|Recipient| rhimelkhan@gmail.com| @Byeon_recipient|
-|Ngo| angela.otieno254@gmail.com| @Miran_ngo*|
-|Donor-supermarket| sugakookiemin8@gmail.com| *Mart_supermarket|
-|Donor-Restaurant| savory.haven@gmail.com| *Savory_restaurant|
+## 🔐 Credentials
+| Role               | Email                         | Password           |
+|--------------------|-----------------------------|--------------------|
+| Admin             | sagwakmaria@gmail.com        | adminpass123       |
+| Donor             | ariavhope4@gmail.com         | @Mingyu_donor      |
+| Recipient         | rhimelkhan@gmail.com         | @Byeon_recipient   |
+| NGO               | angela.otieno254@gmail.com   | @Miran_ngo*        |
+| Donor-Supermarket | sugakookiemin8@gmail.com     | *Mart_supermarket  |
+| Donor-Restaurant  | savory.haven@gmail.com       | *Savory_restaurant |
+
 ---
 
 ## 🎯 Key Features

@@ -18,6 +18,7 @@ import {
   IconButton,
   CssBaseline,
   useTheme,
+  CircularProgress
 } from "@mui/material";
 
 import {
@@ -123,7 +124,7 @@ const Donations = ({ title }) => {
   
     fetchDonations();
   }, []);
-
+  
   const sidebarItemsMap = { admin: adminSidebarItems };
   const sidebarItems = sidebarItemsMap[userType];
 
@@ -143,7 +144,8 @@ const Donations = ({ title }) => {
   const isActive = (href) => {
     return window.location.pathname === href;
   };
-
+ if (loading) return <CircularProgress animation="border" />;
+ 
   const drawer = (
     <Box sx={{ display: "flex", flexDirection: "column", minHeight: "100%" }}>
       <Box sx={{ p: 3, display: "flex", flexDirection: "column", alignItems: "center" }}>

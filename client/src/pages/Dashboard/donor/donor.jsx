@@ -68,7 +68,6 @@ const DonorDashboard = () => {
     Others: "#795548",
   };
   
-
   useEffect(() => {
     if (!token) return; // ❌ Exit if no token
     // Fetch statistics
@@ -88,6 +87,8 @@ const DonorDashboard = () => {
         setRecentActivity(response.data.activities);
       })
       .catch((error) => console.error("Error fetching activity:", error));
+    // Fetch donations
+    
   }, [token]);
 
   const handleChange = (e) => {

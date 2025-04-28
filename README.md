@@ -88,7 +88,7 @@ SHAREASMILE-FOOD_DONATION_APP/
 
 ### Frontend 🎨
 - **React.js** → Dynamic UI & user experience
-- **ShadCN UI & Radix UI** → Modern UI components
+- **Material UI** → Modern UI components
 - **Bootstrap & CSS** → Styling and layout
 
 ---
@@ -113,12 +113,13 @@ $ npm start
 
 ### 3️⃣ Frontend Setup
 ```sh
+$ cd vite@latest foldername
 $ cd client
 $ npm install
 $ npm start
 ```
 
-🚀 **Visit:** `http://localhost:3000/` to access the platform.
+🚀 **Visit:** `[http://localhost:3000/](https://share-a-smile-food-donation-app.vercel.app` to access the platform.
 
 ---
 

@@ -39,10 +39,10 @@ const Reports = ({ title }) => {
     const fetchReports = async () => {
       try {
         const [donationsRes, categoryRes, donorsRes, statusRes] = await Promise.all([
-          axios.get("http://localhost:5000/api/stats/reports/total-donations", { headers: { Authorization: `Bearer ${token}` } }),
-          axios.get("http://localhost:5000/api/stats/reports/donations-by-category", { headers: { Authorization: `Bearer ${token}` } }),
-          axios.get("http://localhost:5000/api/stats/reports/top-donors", { headers: { Authorization: `Bearer ${token}` } }),
-          axios.get("http://localhost:5000/api/stats/reports/requests-by-status", { headers: { Authorization: `Bearer ${token}` } }),
+          axios.get(`${import.meta.env.VITE_API_BASE_URL}/api/stats/reports/total-donations`, { headers: { Authorization: `Bearer ${token}` } }),
+          axios.get(`${import.meta.env.VITE_API_BASE_URL}/api/stats/reports/donations-by-category`, { headers: { Authorization: `Bearer ${token}` } }),
+          axios.get(`${import.meta.env.VITE_API_BASE_URL}/api/stats/reports/top-donors`, { headers: { Authorization: `Bearer ${token}` } }),
+          axios.get(`${import.meta.env.VITE_API_BASE_URL}/api/stats/reports/requests-by-status`, { headers: { Authorization: `Bearer ${token}` } }),
         ]);
 
         setTotalDonations(donationsRes.data);
@@ -405,7 +405,7 @@ const Reports = ({ title }) => {
                   dataKey="count" 
                   fill="" >
                     {totalDonations.map((entry, index) => (
-                      <Cell key={`cell-${index}`} fill={["#4caf50", "#4fd8c6"][index % 2]} />
+                      <Cell key={`cell-${index}`} fill={["#4caf50", "#4fd8c6", "#82ca9d"][index % 3]} />
                     ))}
                   </Bar>
               
